@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Check The Weather in your city [Live Demo](https://silly-lamarr-5c87cf.netlify.app/).
 
 ## Available Scripts
 

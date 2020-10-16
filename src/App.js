@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef} from 'react';
 import SearchBar from "material-ui-search-bar";
 import { gsap } from "gsap";
 import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
-import {  RiMailSendLine} from 'react-icons/ri';
+import {  AiOutlineProfile} from 'react-icons/ai';
 import {  CgProfile} from 'react-icons/cg';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
+
 
 
 const api = {
@@ -38,6 +39,8 @@ function App() {
     setOpen((prev) => placement !== newPlacement || !prev);
     setPlacement(newPlacement);
   };
+
+  
 
   const search = evt => {
     if (evt.key === "Enter") {
@@ -142,9 +145,9 @@ function App() {
       <div class="leftside">
         <ul>
           <li><Button  onClick={handleClick('right-end')}><CgProfile className="describtion"/></Button></li>
-          <li><FaLinkedinIn/></li>
-          <li><FaGithub/></li>
-          <li><RiMailSendLine/></li>
+          <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
+          <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
+          <li><a href="#"><AiOutlineProfile/></a></li>
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
@@ -152,12 +155,9 @@ function App() {
           <Fade {...TransitionProps} timeout={350}>
             <Paper className="mg-l">
               <Typography>
-                TThe content of the Popper.
-                he content of the Popper.
-                <br></br>
-                The content of the Popper.The content of the Popper.The content of the Popper.T<br></br>he content of the Popper.
-                The content of the Popper.The content of the Popper.The content of the Popper.T<br></br>he content of the Popper.
-                <br></br>The content of the Popper.The content of the Popper.The content of the Popper.The content of the Popper.
+                A simple app using OpenWeatherMap API <br></br>
+                to show current weather in a city. <br></br>
+                The app is created with React, Material-UI and GSAP animations.
               </Typography>
             </Paper>
           </Fade>

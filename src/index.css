@@ -76,7 +76,7 @@ body {
 
 .leftside li{
   list-style: none;
-  padding: 20px 5px;
+  
   transition: .6s;
   color: white;
   position: relative;
@@ -85,12 +85,27 @@ body {
 }
 
 .leftside li i{
-  font-size: 40px;
+  display:block;
+  
+}
+
+.leftside li a {
+  text-decoration: none;
+  color: inherit;
+  display:inline-block;
+  padding: 20px 5px;
+  height: 100%;
+  width: 100%;
+  
 }
 
 .describtion{
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 60%;
+  height: 60%;
+  color: white;
+  display:inline-block;
+  padding: 20px 5px;
+  
 }
 
 .mg-l{

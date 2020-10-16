@@ -157,7 +157,7 @@ function App() {
               <Typography>
                 A simple app using OpenWeatherMap API <br></br>
                 to show current weather in a city. <br></br>
-                The app is created with React, Material-UI and GSAP animations.
+                The app is created with React, Material-UI <br></br>and GSAP animations.
               </Typography>
             </Paper>
           </Fade>

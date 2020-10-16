@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef} from 'react';
 import SearchBar from "material-ui-search-bar";
 import { gsap } from "gsap";
+import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
+import {  RiMailSendLine,  RiProfileLine} from 'react-icons/ri';
 
 
 const api = {

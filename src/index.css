@@ -80,7 +80,10 @@ body {
   transition: .6s;
   color: white;
   position: relative;
+<<<<<<< HEAD
   opacity: .6;
+=======
+>>>>>>> 356e1b557049cdaea299f97c57f8cff538ef036b
 
 }
 
@@ -100,14 +103,19 @@ body {
   background: #dd4b39;
 }
 .leftside li:nth-child(2){
+<<<<<<< HEAD
   background: #007cb64d;
   
+=======
+  background: #007bb6;
+>>>>>>> 356e1b557049cdaea299f97c57f8cff538ef036b
 }
 .leftside li:nth-child(4){
   background: #cb2017;
 }
 
 
+<<<<<<< HEAD
 .leftside li:hover{
   opacity: 1;
   text-shadow: 2px 2px 4px #000000;
@@ -128,6 +136,8 @@ body {
 
 
 
+=======
+>>>>>>> 356e1b557049cdaea299f97c57f8cff538ef036b
 
 main {
   min-height: 100%;

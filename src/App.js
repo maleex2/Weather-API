@@ -28,9 +28,9 @@ function App() {
   const box1 = useRef(null);
   const h1 = useRef(null);
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [open, setOpen] = React.useState(false);
-  const [placement, setPlacement] = React.useState();
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState();
   
 
   const handleClick = (newPlacement) => (event) => {
@@ -141,7 +141,7 @@ function App() {
     <div className="bg-effect">
       <div class="leftside">
         <ul>
-          <li><CgProfile /></li>
+          <li><Button  onClick={handleClick('right-end')}><CgProfile className="describtion"/></Button></li>
           <li><FaLinkedinIn/></li>
           <li><FaGithub/></li>
           <li><RiMailSendLine/></li>
@@ -150,8 +150,15 @@ function App() {
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
         {({ TransitionProps }) => (
           <Fade {...TransitionProps} timeout={350}>
-            <Paper>
-              <Typography>The content of the Popper.</Typography>
+            <Paper className="mg-l">
+              <Typography>
+                TThe content of the Popper.
+                he content of the Popper.
+                <br></br>
+                The content of the Popper.The content of the Popper.The content of the Popper.T<br></br>he content of the Popper.
+                The content of the Popper.The content of the Popper.The content of the Popper.T<br></br>he content of the Popper.
+                <br></br>The content of the Popper.The content of the Popper.The content of the Popper.The content of the Popper.
+              </Typography>
             </Paper>
           </Fade>
         )}

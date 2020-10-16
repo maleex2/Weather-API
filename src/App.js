@@ -1,7 +1,15 @@
 import React, { useState, useEffect, useRef} from 'react';
 import SearchBar from "material-ui-search-bar";
 import { gsap } from "gsap";
-import { SendTwoTone } from '@material-ui/icons';
+import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
+import {  RiMailSendLine} from 'react-icons/ri';
+import {  CgProfile} from 'react-icons/cg';
+import Button from '@material-ui/core/Button';
+import Fade from '@material-ui/core/Fade';
+import Paper from '@material-ui/core/Paper';
+import Popper from '@material-ui/core/Popper';
+import Typography from '@material-ui/core/Typography';
+
 
 const api = {
   key: "26e8cd869a83e09ec49c88da79eb209b",
@@ -19,6 +27,17 @@ function App() {
   const box = useRef(null);
   const box1 = useRef(null);
   const h1 = useRef(null);
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
+  const [placement, setPlacement] = React.useState();
+  
+
+  const handleClick = (newPlacement) => (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((prev) => placement !== newPlacement || !prev);
+    setPlacement(newPlacement);
+  };
 
   const search = evt => {
     if (evt.key === "Enter") {
@@ -117,9 +136,26 @@ function App() {
   }
  
   
-
+   
   return (
     <div className="bg-effect">
+      <div class="leftside">
+        <ul>
+          <li><CgProfile /></li>
+          <li><FaLinkedinIn/></li>
+          <li><FaGithub/></li>
+          <li><RiMailSendLine/></li>
+        </ul>
+      </div>
+      <Popper open={open} anchorEl={anchorEl} placement={placement} transition>
+        {({ TransitionProps }) => (
+          <Fade {...TransitionProps} timeout={350}>
+            <Paper>
+              <Typography>The content of the Popper.</Typography>
+            </Paper>
+          </Fade>
+        )}
+      </Popper>
       <main>
       
         <h1 className={h1display} ref={h1}>Simply Check The Weather</h1>
@@ -172,4 +208,3 @@ function App() {
 }
 
 export default App;
-//todo make it look nicer, make it responsive, put more info from the api - prob in pic zoom like gallery, deploy

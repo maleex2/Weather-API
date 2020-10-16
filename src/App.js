@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef} from 'react';
 import SearchBar from "material-ui-search-bar";
 import { gsap } from "gsap";
 import { FaLinkedinIn , FaGithub } from 'react-icons/fa';
-<<<<<<< HEAD
 import {  RiMailSendLine} from 'react-icons/ri';
 import {  CgProfile} from 'react-icons/cg';
 import Button from '@material-ui/core/Button';
@@ -10,9 +9,6 @@ import Fade from '@material-ui/core/Fade';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
-=======
-import {  RiMailSendLine,  RiProfileLine} from 'react-icons/ri';
->>>>>>> 356e1b557049cdaea299f97c57f8cff538ef036b
 
 
 const api = {
@@ -143,7 +139,6 @@ function App() {
    
   return (
     <div className="bg-effect">
-<<<<<<< HEAD
       <div class="leftside">
         <ul>
           <li><CgProfile /></li>
@@ -161,18 +156,6 @@ function App() {
           </Fade>
         )}
       </Popper>
-=======
-    <div class="leftside">
-        <ul>
-          
-          <li><RiProfileLine /></li>
-          <li><FaLinkedinIn/></li>
-          <li><FaGithub/></li>
-          <li><RiMailSendLine/></li>
-          <li><Button onClick={handleClick('right')}>BsTextLeft</Button></li>
-        </ul>
-      </div>
->>>>>>> 356e1b557049cdaea299f97c57f8cff538ef036b
       <main>
         <h1 className={h1display} ref={h1}>Simply Check The Weather</h1>
         <div ref={box} className="search-box">
@@ -224,7 +207,3 @@ function App() {
 }
 
 export default App;
-<<<<<<< HEAD
-=======
-//todo make it look nicer, make it responsive, put more info from the api - prob in pic zoom like gallery, deploy
->>>>>>> 356e1b557049cdaea299f97c57f8cff538ef036b

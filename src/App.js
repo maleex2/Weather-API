@@ -120,8 +120,17 @@ function App() {
 
   return (
     <div className="bg-effect">
+    <div class="leftside">
+        <ul>
+          
+          <li><RiProfileLine /></li>
+          <li><FaLinkedinIn/></li>
+          <li><FaGithub/></li>
+          <li><RiMailSendLine/></li>
+          <li><Button onClick={handleClick('right')}>BsTextLeft</Button></li>
+        </ul>
+      </div>
       <main>
-      
         <h1 className={h1display} ref={h1}>Simply Check The Weather</h1>
         <div ref={box} className="search-box">
         

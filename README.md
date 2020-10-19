@@ -1,6 +1,6 @@
 # Check The Weather in your city [Live Demo](https://silly-lamarr-5c87cf.netlify.app/).
 
-Using React, CSS, NodeJs, npm and [OpenWeatherMap API](https://openweathermap.org/api) 
+### Made using React, Node, npm, Material-UI, GSAP animations and the [OpenWeatherMap API](https://openweathermap.org/api) 
 
 ## Available Scripts
 

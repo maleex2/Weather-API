@@ -108,6 +108,8 @@ body {
   
 }
 
+
+
 .mg-l{
   margin-left: 5px;
   padding: 10px;
@@ -207,6 +209,22 @@ h1{
 @media only screen and (max-width: 600px) {
   .close {
     margin-left: 8rem;
+  }
+	 .leftside li a{
+padding: 10px 35%;
+
+  }
+
+  .describtion{
+    width: 60%;
+  height: 60%;
+  padding: 10px 5px;
+  margin-left: -15px;
+  
+  }
+
+  ul {
+    width: 50px;
   }
 }
 

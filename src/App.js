@@ -78,10 +78,10 @@ function App() {
   useEffect(() => {
     if(menuOpen===false){
     animation.current = gsap.timeline().to(box.current, {
-      y: '-35vh' , duration: 2
+      "margin-top": '5%' , duration: 2
     });
     animation.current = gsap.timeline().to(h1.current, {
-      y: '-30vh' , duration: 2
+      "margin-top": '3%' , duration: 2
     });
     animation.current = gsap.timeline().fromTo(h1.current, {
       opacity: 1}, {opacity: 0, duration: 1}
@@ -105,7 +105,7 @@ function App() {
       display: 'block'
     });
     animation.current = gsap.timeline().to(box1.current, {
-      y: '-26vh', duration: 2
+      "margin-top": '0.2%', duration: 2
     });
     
     
@@ -119,16 +119,16 @@ function App() {
       opacity: 1}, {opacity: 0, duration: 1}
     );
     animation.current = gsap.timeline().to(box1.current, {
-      y: '0', duration: 2
+      "margin-top": '10em', duration: 2
     });
     animation.current = gsap.timeline().to(box.current, {
-      y: '0' , duration: 2
+      "margin-top": "2em" , duration: 2
     });
     animation.current = gsap.timeline().to(box1.current, {
       display: 'none'
     });
     animation.current = gsap.timeline().to(h1.current, {
-      y: '0' , duration: 2
+      "margin-top": "10em" , duration: 2
     });
     animation.current = gsap.timeline().fromTo(h1.current, {
       opacity: 0}, {opacity: 1, duration: 1}
@@ -157,14 +157,14 @@ function App() {
               <Typography>
                 A simple app using OpenWeatherMap API <br></br>
                 to show current weather in a city. <br></br>
-                The app is created with React, Material-UI <br></br>and GSAP animations.
+                The app is created with React, Material-UI and GSAP animations.
               </Typography>
             </Paper>
           </Fade>
         )}
       </Popper>
       <main>
-        <h1 className={h1display} ref={h1}>Simply Check The Weather</h1>
+        <h1 className={h1display} id="h1" ref={h1}>Simply Check The Weather</h1>
         <div ref={box} className="search-box">
         
         <SearchBar
@@ -189,7 +189,7 @@ function App() {
         
 
         {(typeof weather.main != "undefined") ? (
-        <div ref={box1}>
+        <div ref={box1} className="box1">
           <div onClick={closeHandler} className="location-box">
           <button className='close'>x</button>
             <div className="location">{weather.name}, {weather.sys.country}</div>

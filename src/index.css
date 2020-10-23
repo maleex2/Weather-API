@@ -71,7 +71,7 @@ body {
   padding: 0;
   margin: 0;
   position: absolute;
-  top:25%;
+  top:55%;
 }
 
 .leftside li{
@@ -107,8 +107,6 @@ body {
   padding: 20px 5px;
   
 }
-
-
 
 .mg-l{
   margin-left: 5px;
@@ -161,6 +159,7 @@ main {
 .search-box {
   width: 100%;
   margin: 0;
+  margin-bottom: 5%;
   padding: 0;
   
 }
@@ -210,21 +209,12 @@ h1{
   .close {
     margin-left: 8rem;
   }
-	 .leftside li a{
-padding: 10px 35%;
-
+  #root{
+   height: 100vh;
   }
-
-  .describtion{
-    width: 60%;
-  height: 60%;
-  padding: 10px 5px;
-  margin-left: -15px;
-  
-  }
-
-  ul {
-    width: 50px;
+  #h1{
+    font-size: 20px;
+    margin-bottom: 5%;
   }
 }
 
@@ -291,4 +281,26 @@ h4{
       width: 40%;
       border-radius: 5px;
     
+}
+
+.box1{
+  margin-top: 4em;
+}
+
+
+html{
+    /* Wave Color */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#59adeb+0,42c2b5+52,34ce93+100 */
+  background: #59adeb;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  background-size: 350% 350%;
+  animation: waveColors 8s ease infinite;
 }

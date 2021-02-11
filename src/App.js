@@ -147,7 +147,7 @@ function App() {
           <li><Button  onClick={handleClick('right-end')}><CgProfile className="describtion"/></Button></li>
           <li><a href="https://www.linkedin.com/in/martin-aleksandrov-322642195/"><FaLinkedinIn /></a></li>
           <li ><a href="https://github.com/maleex2"><FaGithub/></a></li>
-          <li><a href="https://github.com/maleex2"><AiOutlineProfile/></a></li>
+          <li><a href="https://docs.google.com/uc?export=download&id=1120Ono5lmbKgC0WS2x6qA5gX608D0qLJ"><AiOutlineProfile/></a></li>
         </ul>
       </div>
       <Popper open={open} anchorEl={anchorEl} placement={placement} transition>

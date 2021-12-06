@@ -1,4 +1,4 @@
-# Check The Weather in your city [Live Demo](https://silly-lamarr-5c87cf.netlify.app/).
+# Check The Weather in your city [Live Demo](https://check-the-weather-now.netlify.app/).
 
 ### Made using React, Node, npm, Material-UI, GSAP animations and the [OpenWeatherMap API](https://openweathermap.org/api) 
 
